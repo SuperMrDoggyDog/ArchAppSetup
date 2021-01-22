@@ -28,9 +28,9 @@ cd ~/Downloads/
 
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.19.7784.tar.gz
 
-tar xfzv ./jetbrains-toolbox-1.19.7784.tar.gz
+tar xfzv ./jetbrains-toolbox-1.19.77.tar.gz
 
-mv ./jetbrains-toolbox-1.19.7784/jetbrains-toolbox-1.19.7784.appimage ~/Applications
+mv ./jetbrains-toolbox-1.19.77/jetbrains-toolbox-1.19.77.appimage ~/Applications
 
 cd ~/Applications
 
