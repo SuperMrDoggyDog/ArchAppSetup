@@ -1,41 +1,54 @@
 #!/bin/bash
 
-cd
+# cding into ~/ just in case
+cd ~/
 
-sudo pacman -S atom notepadqq lutris alacritty cheese chromium deadbeef udisks2 emacs gimp htop keepassxc virtualbox virt-manager qbittorent steam vim neovim exa vlc nano sudo audacity kdenlive discord libreoffice-fresh libnotify notification-daemon wine-staging winetricks blender mpv
-
-git clone https://aur.archlinux.org/yay-bin.git
-
-cd yay-bin
-
+# Installing paru (An aur helper)
+git clone git://aur.archlinux.org/paru-bin.git
+cd paru-bin
 makepkg -si
 
-cd
+# Installing window managers
+paru -S awesomewm openbox tint2 xmonad xmonad-contrib leftwm xmobar lightdm lightdm-gtk-greeter light-locker polybar
 
-yay -S balena-etcher multimc5 multimc-curseforge minecraft-launcher nbtexplorer stacer-bin appimagelauncher-git snapd
+# Installing all programs needed
+paru -S alacritty audacity blender brave-bin cheese deadbeef discord emacs exa gimp htop kdenlive libnotify libreoffice-fresh lutris mpv nano nitrogen notepadqq notifications-daemon neovim picom polkit qbittorent steam sudo udisks2 vim virt-manager virtualbox vlc wine-staging winetricks multimc multimc-curseforge librewolf-bin snapd kvantum xterm pcmanfm mu kitty appimagelauncher ripgrep fd atom blueman bullshit chrome-remote-desktop chromium checkupdates-aur emby-theater-bin feh firefox fish geary heroic-games-launcher-bin minigalaxy minecraft-launcher network-manager-applet networkmanager newsflash nextcloud-client obs-studio openssh openvpn plex-media-player playerctl playonlinux pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-qt qemu remmina samba spotify stacer termite tigervnc trayer vifm volumeicon
 
-sudo systemctl enable --now snapd.socket
+# Installing dmenu
+mkdir ~/sourcecode
+cd ~/sourcecode
+git clone git://gitlab.com/SuperMrDoggyDog/dmenu.git
+cd dmenu
+sudo make install
+cd ~/
 
-sudo ln -s /var/lib/snapd/snap /snap
+# Installing surf
+cd ~/sourcecode
+git clone git://gitlab.com/SuperMrDoggyDog/surf.git
+cd surf
+sudo make install
+cd ~/
 
-mkdir Applications
+# Installing BadWolf
+cd ~/sourcecode
+wget https://hacktivis.me/releases/badwolf-1.0.3.tar.gz
+tar xfzv badwolf*.tar.gz
+mv badwolf*/ badwolf
+cd badwolf
+make
+sudo make install
+cd ~/
 
-cd Applications
+# Installing xmenu
+cd ~/sourcecode
+git clone git://gitlab.com/SuperMrDoggyDog/xmenu.git
+cd xmenu
+sudo make install
+cd ~/
 
-wget https://github.com/lbryio/lbry-desktop/releases/download/v0.49.3/LBRY_0.49.3.AppImage
-
-cd ~/Downloads/
-
-wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.19.7784.tar.gz
-
-tar xfzv ./jetbrains-toolbox-1.19.7784.tar.gz
-
-mv ./jetbrains-toolbox-1.19.7784/jetbrains-toolbox.appimage ~/Applications
-
-cd ~/Applications
-
-wget https://appoutlet.herokuapp.com/download/appimage
-
-cd
-
-echo -e "The system is about to reboot. Please close any running applications. When reboot is finished, run snapappinstall.sh"
+# Cloning git repos
+git clone git://gitlab.com/SuperMrDoggyDog/dotfiles.git ~/DotFiles
+git clone git://gitlab.com/dwt1/dotfiles.git ~/DTDotFiles
+git clone git://gitlab.com/SuperMrDoggyDog/wallpapers.git ~/Wallpapers
+git clone git://gitlab.com/dwt1/wallpapers.git ~/DTWallpapers
+git clone git://gitlab.com/SuperMrDoggyDog/privatefiles.git ~/PrivateFiles
