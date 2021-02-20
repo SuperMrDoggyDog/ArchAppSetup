@@ -8,6 +8,6 @@ read message
 
 git commit -m "$message"
 
-git push git@github.com:SuperMrDoggyDog/ArchAppSetup.git
+git push all
 
 echo "Success"
