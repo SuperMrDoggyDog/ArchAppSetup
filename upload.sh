@@ -2,12 +2,8 @@
 
 git add "./*"
 
-echo -e "Please enter commit message: "
-
-read message
+read -p "Please enter commit message: " message
 
 git commit -m "$message"
 
 git push all
-
-echo "Success"
