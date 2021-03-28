@@ -9,7 +9,7 @@ cd paru-bin
 makepkg -si
 
 # Installing window managers
-paru -S nvidia xorg xorg-xinit awesomewm openbox tint2 xmonad xmonad-contrib leftwm xmobar lightdm lightdm-gtk-greeter light-locker polybar mesa qtile
+paru -S nvidia-dkms xorg xorg-xinit awesomewm openbox tint2 xmonad xmonad-contrib leftwm xmobar lightdm lightdm-gtk-greeter light-locker polybar mesa qtile
 
 # Installing all programs needed
 paru -S alacritty audacity blender brave-bin cheese deadbeef discord emacs exa gimp htop kdenlive libnotify libreoffice-fresh lutris mpv nano neofetch nitrogen notepadqq notifications-daemon neovim picom polkit qbittorent steam sudo udisks2 vim virt-manager virtualbox vlc wine-staging winetricks multimc multimc-curseforge librewolf-bin snapd kvantum xterm pcmanfm mu kitty appimagelauncher ripgrep fd atom blueman bullshit chrome-remote-desktop chromium checkupdates-aur emby-theater-bin feh firefox fish geary heroic-games-launcher-bin minigalaxy minecraft-launcher network-manager-applet networkmanager newsflash nextcloud-client obs-studio openssh openvpn plex-media-player playerctl playonlinux pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-qt qemu remmina samba spotify stacer termite tigervnc trayer vifm volumeicon fontmatrix sxiv hplip python-pyqt5 rpcbind sane xsane python-reportlab python-pillow libusb hplip-plugin alsa-utils vi 0ad alsa-lib alsa-plugins alsa-utils android-studio-canary arc-gtk-theme arc-icon-theme batbash-completion awk checkupdates+aur cmake code gparted kdeconnect make lxappearance obconf obmenu tar mbsync-git mailspring llvm direnv-bin rtags bitwarden-bin todoist spotify authy
