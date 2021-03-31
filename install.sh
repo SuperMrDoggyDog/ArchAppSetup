@@ -12,7 +12,7 @@ makepkg -si
 paru -S nvidia-dkms xorg xorg-xinit awesomewm openbox tint2 xmonad xmonad-contrib leftwm xmobar lightdm lightdm-gtk-greeter light-locker polybar mesa qtile
 
 # Installing all programs needed
-paru -S alacritty audacity blender brave-bin cheese deadbeef discord emacs exa gimp htop kdenlive libnotify libreoffice-fresh lutris mpv nano neofetch nitrogen notepadqq notifications-daemon neovim picom polkit qbittorent steam sudo udisks2 vim virt-manager virtualbox vlc wine-staging winetricks multimc multimc-curseforge librewolf-bin snapd kvantum xterm pcmanfm mu kitty appimagelauncher ripgrep fd atom blueman bullshit chrome-remote-desktop chromium checkupdates-aur emby-theater-bin feh firefox fish geary heroic-games-launcher-bin minigalaxy minecraft-launcher network-manager-applet networkmanager newsflash nextcloud-client obs-studio openssh openvpn plex-media-player playerctl playonlinux pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-qt qemu remmina samba spotify stacer termite tigervnc trayer vifm volumeicon fontmatrix sxiv hplip python-pyqt5 rpcbind sane xsane python-reportlab python-pillow libusb hplip-plugin alsa-utils vi 0ad alsa-lib alsa-plugins alsa-utils android-studio-canary arc-gtk-theme arc-icon-theme batbash-completion awk checkupdates+aur cmake code gparted kdeconnect make lxappearance obconf obmenu tar mbsync-git mailspring llvm direnv-bin rtags bitwarden-bin todoist spotify authy
+paru -S alacritty audacity blender brave-bin cheese deadbeef discord emacs exa gimp htop kdenlive libnotify libreoffice-fresh lutris mpv nano neofetch nitrogen notepadqq notifications-daemon neovim picom polkit qbittorent steam sudo udisks2 vim virt-manager virtualbox vlc winetricks multimc5 multimc-curseforge librewolf-bin snapd kvantum-qt5 xterm pcmanfm mu kitty appimagelauncher ripgrep fd atom blueman bullshit chrome-remote-desktop chromium checkupdates-aur emby-theater-bin feh firefox fish geary heroic-games-launcher-bin minigalaxy minecraft-launcher network-manager-applet networkmanager newsflash nextcloud-client obs-studio openssh openvpn plex-media-player playerctl playonlinux pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-qt qemu remmina samba spotify stacer termite tigervnc trayer vifm volumeicon fontmatrix sxiv hplip python-pyqt5 rpcbind sane xsane python-reportlab python-pillow libusb hplip-plugin alsa-utils vi 0ad alsa-lib alsa-plugins alsa-utils android-studio-canary arc-gtk-theme arc-icon-theme bat bash-completion awk checkupdates+aur cmake code gparted kdeconnect make lxappearance obconf obmenu tar mbsync-git mailspring llvm direnv-bin rtags bitwarden-bin todoist spotify authy
 
 # Installing extra kernels
 paru -S linux-zen linux-lts
@@ -22,7 +22,7 @@ sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print
 paru -S broadcom-wl-dkms
 
 # Installing fonts
-paru -S nerd-fonts-robotomono ttf-ubuntu-font-family
+paru -S nerd-fonts-roboto-mono ttf-ubuntu-font-family
 
 # Installing starship
 mkdir ~/Downloads
