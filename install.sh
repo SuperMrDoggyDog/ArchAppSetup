@@ -82,6 +82,7 @@ rustup component add rust-src
 paru -S jdk-openjdk python pmbootstrap android-emulator-canary go nodejs npm eclipse-rust hlint cabal-install rust-analyzer ktlint marked python-isort python-pipenv python-nose python-pytest shellcheck stylelint js-beautify
 
 # Cloning git repos
+git clone https://www.gitlab.com/SuperMrDoggyDog/dotfiles.git ~/
 git clone https://www.gitlab.com/SuperMrDoggyDog/dotfiles.git ~/DotFiles
 git clone https://www.gitlab.com/dwt1/dotfiles.git ~/DTDotFiles
 git clone https://www.gitlab.com/SuperMrDoggyDog/wallpapers.git ~/Wallpapers
